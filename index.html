@@ -30,7 +30,6 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:var(--f
 button,select{font:inherit;color:inherit}
 svg{display:block}
 
-/* ── LAYOUT ── */
 .app{
   height:100%;
   display:grid;
@@ -39,7 +38,6 @@ svg{display:block}
   background:var(--bg);
 }
 
-/* ── SIDEBAR ── */
 .sidebar{
   height:100vh;
   border-right:1px solid var(--border);
@@ -89,7 +87,6 @@ svg{display:block}
   color:var(--muted2);
 }
 
-/* ── FEED ── */
 .feed-shell{
   height:100vh;
   min-width:0;
@@ -134,7 +131,6 @@ svg{display:block}
 }
 .feed::-webkit-scrollbar{display:none}
 
-/* ── REEL ── */
 .reel,.loader-reel{
   height:100vh;
   scroll-snap-align:start;
@@ -162,7 +158,6 @@ video{
   background:#040404;
 }
 
-/* gradient shade - top and bottom */
 .shade{
   position:absolute;z-index:2;inset:0;
   pointer-events:none;
@@ -177,7 +172,6 @@ video{
 
 .tap{position:absolute;z-index:4;inset:70px 72px 110px 0;cursor:pointer}
 
-/* play icon */
 .play-indicator{
   position:absolute;z-index:5;
   left:50%;top:50%;
@@ -195,7 +189,6 @@ video{
 .reel.paused .play-indicator{opacity:1}
 .play-indicator svg{width:22px;margin-left:3px;fill:#fff}
 
-/* meta */
 .meta{
   position:absolute;z-index:7;
   left:14px;right:76px;
@@ -231,7 +224,6 @@ video{
 }
 .music-line span{overflow:hidden;text-overflow:ellipsis}
 
-/* actions */
 .actions{
   position:absolute;z-index:8;
   right:6px;bottom:26px;
@@ -259,7 +251,6 @@ video{
 .action.liked .bubble{background:rgba(224,82,82,.18);border-color:rgba(224,82,82,.3)}
 .action.liked svg{stroke:var(--red);fill:var(--red)}
 
-/* avatar in actions */
 .avatar{
   width:42px;height:42px;
   border-radius:50%;
@@ -278,7 +269,6 @@ video{
   letter-spacing:.04em;
 }
 
-/* disc */
 .disc{
   width:36px;height:36px;
   border-radius:50%;
@@ -297,7 +287,6 @@ video{
 }
 @keyframes spin{to{transform:rotate(360deg)}}
 
-/* progress */
 .progress{
   position:absolute;z-index:9;
   bottom:0;left:0;right:0;
@@ -310,7 +299,6 @@ video{
   transition:width .1s linear;
 }
 
-/* loader */
 .loader-reel{
   display:grid;place-items:center;
   text-align:center;padding:30px;
@@ -336,7 +324,6 @@ video{
 }
 .errorbox button:hover{background:var(--surface)}
 
-/* ── RIGHT PANEL ── */
 .rightbar{
   height:100vh;
   padding:28px 16px;
@@ -386,10 +373,8 @@ select:focus{border-color:var(--muted)}
 
 .row{display:flex;gap:7px;align-items:center;margin-top:9px}
 
-/* ── MOBILE NAV ── */
 .mobile-nav{display:none}
 
-/* ── TOAST ── */
 .toast{
   position:fixed;z-index:200;
   left:50%;bottom:24px;
@@ -404,7 +389,6 @@ select:focus{border-color:var(--muted)}
 }
 .toast.show{opacity:1;transform:translate(-50%,0)}
 
-/* ── DRAWERS ── */
 .backdrop{
   position:fixed;z-index:90;inset:0;
   background:rgba(0,0,0,.7);
@@ -443,7 +427,6 @@ select:focus{border-color:var(--muted)}
 .close:hover{color:var(--text)}
 .close svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2}
 
-/* profile drawer (slightly wider) */
 .profile-drawer{
   position:fixed;z-index:92;
   right:0;top:0;bottom:0;
@@ -527,7 +510,6 @@ select:focus{border-color:var(--muted)}
 }
 .profile-empty{padding:36px 20px;text-align:center;color:var(--muted);font-size:12px;line-height:1.6}
 
-/* comments */
 .comment-user{
   appearance:none;border:0;background:none;
   color:inherit;padding:0;
@@ -547,7 +529,6 @@ select:focus{border-color:var(--muted)}
 .ctext b{display:block;margin-bottom:3px;font-size:12px;color:var(--text)}
 .ctext small{display:block;color:var(--muted);margin-top:4px;font-size:10px}
 
-/* ── RESPONSIVE ── */
 @media(max-width:1020px){
   :root{--sidebar:60px}
   .app{grid-template-columns:var(--sidebar) minmax(320px,520px) 0}
@@ -763,7 +744,6 @@ select:focus{border-color:var(--muted)}
     return added;
   }
 
-  // SVG icons — clean stroked style
   function icon(name){
     return{
       play:`<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#f0f0f0"/></svg>`,
