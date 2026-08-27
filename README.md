@@ -23,10 +23,6 @@ platypus/doomscoll
 
 More features and improvements coming soon.
 
-## Disclaimer
-
-DoomScroll is an independent project and is not affiliated with or endorsed by TikTok.
-
 ---
 
-Made by the DoomScroll team.
+Made by the Platypus team.
