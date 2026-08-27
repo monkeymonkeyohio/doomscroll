@@ -18,10 +18,8 @@ platypus/doomscoll
 ```
 
 ## Status
-
-**Work in progress**
-
-More features and improvements coming soon.
+ACTIVE
+(Live Site)[https://platypuscodes.github.io/doomscroll/]
 
 ---
 
