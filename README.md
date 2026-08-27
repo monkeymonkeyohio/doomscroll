@@ -19,7 +19,7 @@ platypus/doomscoll
 
 ## Status
 ACTIVE
-(Live Site)[https://platypuscodes.github.io/doomscroll/]
+[Live Site](https://platypuscodes.github.io/doomscroll/)
 
 ---
 
