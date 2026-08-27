@@ -18,7 +18,7 @@ platypus/doomscoll
 ```
 
 ## Status
-ACTIVE
+🟢 ACTIVE 🟢
 
 [Live Site](https://platypuscodes.github.io/doomscroll/)
 
