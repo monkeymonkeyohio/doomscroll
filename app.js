@@ -59,7 +59,7 @@
     if (lang && [...regionSelect.options].some(o => o.value === lang)) regionSelect.value = lang;
   }
 
-  async function fetchWithTimeout(url, options = {}, timeout = 14000) {
+  async function fetchWithTimeout(url, options = {}, timeout = 30000) {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), timeout);
     try { return await fetch(url, { ...options, signal: controller.signal }); }
