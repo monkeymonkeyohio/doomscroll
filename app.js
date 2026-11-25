@@ -1,7 +1,7 @@
 (() => {
   const SERVICE_HOST = ["tik", "wm.com"].join("");
   const SOURCE_HOST  = ["tik", "tok.com"].join("");
-  const PROXY_BASE     = "https://doomsroll.detlaffcameron.workers.dev";
+  const PROXY_BASE     = "https://a-proxy.xushan321321.workers.dev/";
 
   let useProxy = localStorage.getItem("platypus-proxy") === "1";
 
