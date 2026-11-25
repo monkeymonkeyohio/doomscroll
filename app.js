@@ -6,9 +6,7 @@
   let useProxy = localStorage.getItem("platypus-proxy") === "1";
 
   function apiBaseList() {
-    return useProxy
-      ? [PROXY_BASE]
-      : [`https://www.${SERVICE_HOST}/api`, `https://${SERVICE_HOST}/api`];
+    return [PROXY_BASE]
   }
   const SERVICE_ORIGIN = `https://www.${SERVICE_HOST}`;
   const SOURCE_ORIGIN  = `https://www.${SOURCE_HOST}`;
